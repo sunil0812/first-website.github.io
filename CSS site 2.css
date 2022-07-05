@@ -1,0 +1,337 @@
+html{
+    background-color: black;
+}
+
+/*##### Defaults #####*/
+nav,
+header,
+footer {
+    display: block;
+}
+
+body
+{
+    line-height: 1;
+    margin: 0;
+}
+
+label{
+    font-family: "Georgia", serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: aqua;
+}
+
+.container{
+    width: 1500px;
+    margin: auto;
+    padding-top:4%;
+    padding-bottom: 4%;
+    filter: blur(20%);
+    
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
+/*############### Nav bar ##############*/
+
+nav{
+    width:100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color: black;
+    overflow:hidden;
+    margin:0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+    padding: 10px;
+}
+
+ul.topnav li.topnav-right{
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul.topnav li a{
+    text-decoration: none;
+    display: block;
+    min-height: 16px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #273;
+    font: "Montserrat", sans-serif;
+}
+
+ul.topnav li a:hover{
+    background-color:black;
+    color: white;
+}
+
+ul.topnav li.dropdwonIcon {
+    display: none;
+}
+
+
+
+/*######## Coustom styles #############*/
+#section-1-gradient{
+    background: #076DFF;
+    background: -webkit-linear-gradient(#076DFF,#65a5ff);
+    background: -o-linear-gradient(#076DFF,#65a5ff);
+    background: -moz-linear-gradient(#076DFF,#65a5ff);
+    background: url(w-qjCHPZbeXCQ-unsplash.jpg) center no-repeat; 
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.leftSide-col{
+    margin-left: 30%;
+}
+
+a{
+    
+    display: block;
+    text-decoration: none;
+}
+
+div.container2{
+    width: 1500px;
+    height: 850px;
+}
+
+.rows{
+    align-content:space-between;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.col-7 img{
+    width: 50%;
+    position: relative;
+    left: 295px;
+    top: 700px;
+}
+
+.col-5 img{
+     position: relative;
+    left: -30px;
+    top: 700px; 
+}
+h2.text{
+    font-family: "Georgia", serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: aqua;
+}
+
+h2.text:hover{
+    text-shadow: 1px 2px 10px cyan;
+}
+h2.thx{
+    color: cornsilk;
+    font-size: 75px;
+    text-align: center;
+    font-family: "Georgia", serif;
+}
+.rows{
+    background-image: url(SeekPng.com_paper-tear-png_96922.png);
+    height: 1110px;
+    width: 1610px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -350px;
+    left: -100px;
+}
+
+div.box{
+    text-align: center;
+    margin-right: 74px;
+    margin-left: 74px;
+    margin-bottom: 44px;
+    padding: 10px 14px 20px 14px;
+    background-color: black;
+    box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
+}
+
+div.icon img{
+    height: 200px;
+    padding: 1px;
+    margin: 1px;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
+
+
+
+h1.large{
+    color: black;
+    margin: 0;
+    text-align: center;
+    font-size: 55px;
+    line-height: 70px;
+    text-shadow: 3px 3px 8px white;
+}
+form h2{
+    color: ghostwhite;
+}
+
+h1.title{
+    font-family: "Garamond", serif;
+    text-align: center;
+    font-size: 60px;
+    color: bisque;
+}
+
+
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+}
+div.rightSide-col img{
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    width: 200px;
+    height: 320px;
+    
+}
+.rightSide-col img:hover{
+    margin: -5px;
+    box-shadow:0px 0px 5px 1px;
+    border-radius: 10px;
+}
+
+/*########## mobile ###########*/
+
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:nth-child(6)){
+        display: none;
+    }
+
+ul.topnav li.dropdwonIcon {
+    display: block;
+    float: left;
+}
+ul.topnav.responsive li.dropdwonIcon{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ul.topnav.responsive {
+    position:relative;
+}
+
+ul.topnav.responsive li:not(:nth-child(6)){
+    display: inline;
+    float: none;
+    text-align: right;
+}
+
+ul.topnav.responsive li a
+{
+    display:block;
+    text-align:right;
+}
+ul.topnav.responsive li{
+        position:inherit;
+    }  
+    
+    
+.col-4{
+        width: 100%;
+        margin: 0;
+    } 
+    
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+    
+    
+    
+    div.leftSide-col{
+        margin: 10px;  
+    }
+    
+    .rightSide-col{
+      display: none;
+    }
+    h1.large{
+        text-align: left;
+        font-size: 45px;
+    }
+    h2.thx{
+    color: cornsilk;
+    font-size: 55px;
+    }
+    .rows{
+    background-image: url(SeekPng.com_paper-tear-png_96922.png);
+    height: 800px;
+    width: 900px;
+    position: relative;
+    top: -350px;
+    left: -100px;
+    }
+    
+    .col-7 img{
+    position: relative;
+    left: 195px;
+    top: 500px;
+    }
+    .col-5 img{
+     position: relative;
+    left: -350px;
+    top: 700px; 
+    }
+    div.container2{
+    width: 500px;
+    height: 100px;
+  }
+}
+
+
+
+
+
+
+
